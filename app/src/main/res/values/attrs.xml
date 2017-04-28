@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleIndicator">
+        <attr name="circle_radius" format="integer"></attr>
+        <attr name="circle_bgColor" format="reference|color"></attr>
+        <attr name="circle_foreColor" format="reference|color"></attr>
+        <attr name="circle_space" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RectIndicator">
+        <attr name="rect_width" format="integer"></attr>
+        <attr name="rect_height" format="integer"></attr>
+
+        <attr name="rect_bgColor" format="reference|color"></attr>
+        <attr name="rect_foreColor" format="reference|color"></attr>
+
+        <attr name="text_bgColor" format="reference|color"></attr>
+        <attr name="text_foreColor" format="reference|color"></attr>
+
+        <attr name="rect_text_size" format="dimension"></attr>
+        <attr name="rect_space" format="integer"></attr>
+        <attr name="rect_corner" format="integer"></attr>
+
+
+    </declare-styleable>
+</resources>

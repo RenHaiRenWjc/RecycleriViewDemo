@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.phonelink.recycleriviewdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="第一页"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"
+        />
+
+        <com.phonelink.recycleriviewdemo.CircleIndicator
+            android:id="@+id/my_indicatior"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:circle_radius="15"
+            app:circle_space="50"
+            app:circle_bgColor="#000000"
+            app:circle_foreColor="#FFD1"
+            />
+    <com.phonelink.recycleriviewdemo.RectIndicator
+        app:rect_bgColor="#000"
+        app:rect_foreColor="#f0f000"
+        app:text_bgColor="#fff"
+        app:text_foreColor="#FF68CE10"
+        android:id="@+id/my_rect_indicatior"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:rect_corner="20"
+        app:rect_height="50"
+        app:rect_space="135"
+        app:rect_text_size="20px"
+        app:rect_width="120"/>
+
+</LinearLayout>
